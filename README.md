@@ -1,2 +1,2 @@
-# kubernetes-notebook
-kubernetes-notebook
+notebook
+
