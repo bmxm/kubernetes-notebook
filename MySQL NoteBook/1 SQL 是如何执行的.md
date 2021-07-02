@@ -35,7 +35,7 @@ SHOW GLOBALVARIABLES LIKE 'query_cache_type';
 - MySQL可以恢复到半个月内任意一秒的状态？
 
 
-- 与查询流程不一样的是，更新流程还设计两个重要的日志模块：
+- 与查询流程不一样的是，更新流程还涉及两个重要的日志模块：
     - redo log (重做日志，InnoDB特有) 
     - 数据更新到内存后，写redo log，此时为prepare状态，然后执行器生成这个操作成bin log并写入磁盘。事务提交后引擎把bin log改为commit状态，更新完成。
     - bin log（归档日志，归属于Server层）。
